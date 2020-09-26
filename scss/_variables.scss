@@ -1,0 +1,26 @@
+/*
+*   Độ rộng grid
+*   Khoảng cách 2 bên container
+*   Khoảng cách 2 bên của column
+*   Số column của grid
+*/
+$grid: (
+  grid: (
+    width: 1200,
+    gap: 12,
+  ),
+  column: (
+    gap: 24,
+    max: 12,
+  ),
+  breakpoints: (
+    default: c,
+    m: 740,
+    l: 1200,
+  ),
+);
+
+$gridWide: map-deep-get($grid, "grid", "width");
+$gridGap: map-deep-get($grid, "grid", "gap");
+$colGap: map-deep-get($grid, "column", "gap");
+$colMax: map-deep-get($grid, "column", "max");

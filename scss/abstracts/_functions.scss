@@ -1,0 +1,8 @@
+/*
+    ? Tính line-height dựa vào font-size
+    ? Đơn vị rem 
+*/
+@function lineHight($size) {
+  @return ($size * 1.25);
+}
+

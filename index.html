@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topcv</title>
+
+    <link rel="icon" href="./img/logo/icon.jfif" />
+
+    <!--? Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+
+    <!--! Grid -->
+    <link rel="stylesheet" href="css/grid.css" />
+    <!--! CSS -->
+    <!--? Reset css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!--? My style css -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--! FontAwesome 4 -->
+    <link
+      rel="stylesheet"
+      href="vendor/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--! start - header -->
+    <header>
+      <nav class="navbar">
+        <div class="grid wide">
+          <div class="row">
+            <!--? logo -->
+            <div class="navbar__logo col-c-12">
+              <a href="error.html" class="navbar__logo-link">
+                <img src="./img/logo/topcv-logo.webp" alt="topcv-logo" />
+              </a>
+            </div>
+
+            <!--? menu -->
+            <ul class="navbar__menu">
+              <li class="navbar__menu-item">
+                <a href="error.html">Về TopCV</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="error.html">Mẫu CV</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="error.html">Mẫu Cover Letter</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="error.html">Mẫu Cover Letter</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="error.html">Khám phá</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="error.html">Công ty</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="error.html">Tư vấn </a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="error.html">Đăng nhập</a>
+              </li>
+
+              <li class="navbar__menu-button">
+                <a href="error.html">
+                  <p>nhà tuyển dụng</p>
+                  <p>Đăng tuyển & Tìm hồ sơ</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--? end - header -->
+
+    <!--! start - banner -->
+    <section>
+      <div class="banner">
+        <div class="grid wide">
+          <div class="row">
+            <!--? banner left -->
+            <div class="col-l-8">
+              <div class="banner__left">
+                <h1>TÌM VIỆC KHÓ - CÓ TOPCV</h1>
+                <h3>sở hữu ngay cv xịn cùng việc làm mơ ước</h3>
+                <p>
+                  30.000+ cơ hội việc làm được kết nối thành công qua TopCV mỗi
+                  ngày
+                </p>
+                <a href="#"> tạo cv online</a>
+                <a href="#" style="background-color: #f1c40e;"> tải cv lên</a>
+              </div>
+            </div>
+
+            <!--? banner right -->
+            <div class="col-l-4">
+              <div class="banner__right">
+                <img src="img/banner/image_topcv.webp" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!--? form search -->
+          <div class="banner__search">
+            <h2>
+              Khám phá ngay 18.000+ việc làm tốt nhất trên TopCV
+            </h2>
+            <div class="banner__search-margin">
+              <div class="row">
+                <!--*input -->
+                <div type="text" class="banner__search-input">
+                  <div class="banner__search-input-icon">
+                    <!-- <i class="fa fa-search banner__search-input--icon"></i> -->
+                    <img src="img/search/icons8-search-64.png" alt="" />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Tìm Kiếm công việc, tìm kiếm công ty ......."
+                    class="banner__search-input--box-search"
+                  />
+                </div>
+
+                <!--*button -->
+                <div class="banner__search-button">
+                  <i class="fa fa-search"></i>
+                  <a>tìm việc ngay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--? end - banner -->
+
+    <!--!start - slide-banner -->
+    <section>
+      <div class="grid wide">
+        <div class="slide__banner col-c-12">
+          <!--? img -->
+          <div class="slide__banner-img">
+            <img
+              onerror="src='img/placeholder/placeholder-image-1200-300.png'"
+              src="img/banner/slide-banner/slide-1.jpg"
+              alt=""
+              class="showing"
+            />
+
+            <img
+              onerror="src='img/placeholder/placeholder-image-1200-300.png'"
+              src="img/banner/slide-banner/slide-2.jpg"
+              alt=""
+            />
+            <img
+              onerror="src='img/placeholder/placeholder-image-1200-300.png'"
+              src="img/banner/slide-banner/slide-3.jpg"
+              alt=""
+            />
+          </div>
+
+          <!--? button slide -->
+          <div class="slide__banner-button">
+            <div class="slide__banner-button--item"></div>
+            <div class="slide__banner-button--item"></div>
+            <div class="slide__banner-button--item"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--? end - slide-banner -->
+
+    <!--! start - box-job -->
+    <section id="best-jobs">
+      <div class="box-job">
+        <div class="grid wide">
+          <!--? title -->
+          <div class="box-job__title col-l-12 col-c-12">
+            <div class="box-job__title-icon">
+              <img src="img/box-job/icons8-rating-64.png" alt="" />
+              <p>tin tuyển dụng, việc làm tốt</p>
+            </div>
+            <!--*show list -->
+            <div class="box-job__title-show-list">
+              <div class="center">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                <a href="#">xem tất cả</a>
+              </div>
+            </div>
+          </div>
+
+          <!--? data -->
+          <div class="box-job__data">
+            <!--! Table Jobs ==> Có nhiều hơn 1 table jobs -->
+            <ul class="box-job__data-item showing">
+              <div class="row">
+                <!--! Item Job ==> Có nhiều Item Job -->
+                <!-- <li
+                  class="col-l-12 col-c-12 no-padding"
+                  style="padding: 0; margin-bottom: 5px;"
+                >
+                  <div class="box-job__data-item-list">
+                    <div class="row">
+                      <div class="col-l-5 logo">
+                        <div class="box-img">
+                          <img src="" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-l-7 info">
+                        <div class="title text_ellipsis" title=""></div>
+                        <div class="company text_ellipsis" title=""></div>
+                        <div class="row">
+                          <div class="col-l-6">
+                            <div class="wage">
+                              <i class="fa fa-usd" aria-hidden="true"></i>
+                              <span></span>
+                            </div>
+                          </div>
+                          <div class="col-l-6">
+                            <div class="location">
+                              <i
+                                class="fa fa-map-marker"
+                                aria-hidden="true"
+                                title=""
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+
+                <!--! Các Item Job sau này sẽ được add vào đây -->
+              </div>
+            </ul>
+
+            <ul class="box-job__data-item">
+              <div class="row">
+                <!--! Item Job ==> Có nhiều Item Job -->
+                <!-- <li
+                  class="col-l-12 col-c-12 no-padding"
+                  style="padding: 0; margin-bottom: 5px;"
+                >
+                  <div class="box-job__data-item-list">
+                    <div class="row">
+                      <div class="col-l-5 logo">
+                        <div class="box-img">
+                          <img src="" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-l-7 info">
+                        <div class="title text_ellipsis" title=""></div>
+                        <div class="company text_ellipsis" title=""></div>
+                        <div class="row">
+                          <div class="col-l-6">
+                            <div class="wage">
+                              <i class="fa fa-usd" aria-hidden="true"></i>
+                              <span></span>
+                            </div>
+                          </div>
+                          <div class="col-l-6">
+                            <div class="location">
+                              <i
+                                class="fa fa-map-marker"
+                                aria-hidden="true"
+                                title=""
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+
+                <!--! Các Item Job sau này sẽ được add vào đây -->
+              </div>
+            </ul>
+
+            <ul class="box-job__data-item">
+              <div class="row">
+                <!--! Item Job ==> Có nhiều Item Job -->
+                <!-- <li
+                  class="col-l-12 col-c-12 no-padding"
+                  style="padding: 0; margin-bottom: 5px;"
+                >
+                  <div class="box-job__data-item-list">
+                    <div class="row">
+                      <div class="col-l-5 logo">
+                        <div class="box-img">
+                          <img src="" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-l-7 info">
+                        <div class="title text_ellipsis" title=""></div>
+                        <div class="company text_ellipsis" title=""></div>
+                        <div class="row">
+                          <div class="col-l-6">
+                            <div class="wage">
+                              <i class="fa fa-usd" aria-hidden="true"></i>
+                              <span></span>
+                            </div>
+                          </div>
+                          <div class="col-l-6">
+                            <div class="location">
+                              <i
+                                class="fa fa-map-marker"
+                                aria-hidden="true"
+                                title=""
+                              ></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+
+                <!--! Các Item Job sau này sẽ được add vào đây -->
+              </div>
+            </ul>
+
+            <!-- </div> -->
+          </div>
+
+          <!--? button -->
+          <div class="box-job__button">
+            <div class="box-job__button-item"></div>
+            <div class="box-job__button-item"></div>
+            <div class="box-job__button-item"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--? end - box-jox -->
+
+    <!--! start - content-job -->
+    <section>
+      <div class="content-job">
+        <div class="grid wide">
+          <div class="content-job__title col-l-12 col-c-12">
+            <p>
+              TopCV là nền tảng <b>Kết nối cơ hội việc làm</b> thông qua
+              <b>CV</b> (hồ sơ xin việc) đầu tiên tại Việt Nam, nơi mà ứng viên
+              sẽ được Nhà tuyển dụng <b>chủ động săn đón</b>, dù ở bất kỳ vị trí
+              nào. Tải ngay ứng dụng TopCV trên điện thoại để có trải nghiệm tốt
+              nhất.
+            </p>
+            <div class="content-job__title-app col-l-12 col-c-12">
+              <a href="#">
+                <img src="img/footer/googleplay.webp" alt="" />
+              </a>
+              <a href="#">
+                <img src="img/footer/appstore.webp" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="content-job__info col-l-12 col-c-12">
+            <div class="row">
+              <div class="col-l-4">
+                <img src="img/content-job/hoan_thien_ho_so.webp" alt="" />
+                <h5><a href="error.html">Hoàn thiện hồ sơ xin việc</a></h5>
+                <p>
+                  Chuẩn bị hồ sơ xin việc ấn tượng & chuyên nghiệp với Công cụ
+                  viết CV số 1 Việt Nam. Chuẩn bị hồ sơ xin việc ấn tượng &
+                  chuyên nghiệp với Công cụ viết CV số 1 Việt Nam.
+                </p>
+              </div>
+              <div class="col-l-4">
+                <img src="img/content-job/chu_dong_tim_viec.webp" alt="" />
+                <h5><a href="error.html"> Chủ động tìm việc</a></h5>
+                <p>
+                  Hệ thống gợi ý các công việc phù hợp với CV của bạn, chỉ 1
+                  click để ứng tuyển nhanh chóng.
+                </p>
+              </div>
+              <div class="col-l-4">
+                <img src="img/content-job/co_hoi.webp" alt="" />
+                <h5><a href="error.html"> Nhận cơ hội hấp dẫn</a></h5>
+                <p>
+                  Nhà tuyển dụng chủ động tìm kiếm bạn qua CV đã tạo trên TopCV,
+                  nhận ngay nhiều lời mời hấp dẫn.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--? end - content-job -->
+
+    <!--! start - reason -->
+    <section>
+      <div class="reason">
+        <div class="grid wide">
+          <h2>tại sao nên sử dụng topcv</h2>
+          <div class="row">
+            <div class="col-l-6 col-c-12 oder-1">
+              <img src="img/reason/tao_cv.webp" alt="" />
+            </div>
+
+            <div class="col-l-6 col-c-12 oder-2">
+              <div class="item-info">
+                <h3>công cụ viết CV đẹp miễn phí</h3>
+                <ul>
+                  <li>
+                    Nhiều mẫu CV đẹp, phù hợp nhu cầu ứng tuyển các vị trí khác
+                    nhau.
+                  </li>
+                  <li>
+                    Tương tác trực quan, dễ dàng chỉnh sửa thông tin, tạo CV
+                    online nhanh chóng trong vòng 5 phút.
+                  </li>
+                  <li>
+                    Nhận gợi ý cách viết CV phù hợp cùng các mẫu CV tham khảo
+                    chi tiết theo ngành nghề.
+                  </li>
+                  <li>
+                    Đồng bộ với các mẫu thư xin việc (Cover Letter). Hỗ trợ đa
+                    ngôn ngữ: tiếng Anh / Nhật / Việt.
+                  </li>
+                </ul>
+                <div class="item-info__button">
+                  <a href="#">tạo cv ngay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-l-6 col-c-12 oder-2">
+              <img src="img/reason/ho_tro_tim_viec.webp" alt="" />
+            </div>
+
+            <div class="col-l-6 col-c-12 oder-1">
+              <div class="item-info">
+                <h3>Việc làm Chất lượng</h3>
+                <ul>
+                  <li>
+                    Hàng ngàn tin tuyển dụng chất lượng cao được cập nhật thường
+                    xuyên để đáp ứng nhu cầu tìm việc của ứng viên.
+                  </li>
+                  <li>
+                    Hệ thống thông minh tự động gợi ý các công việc phù hợp theo
+                    CV của bạn.
+                  </li>
+                </ul>
+                <div class="item-info__button">
+                  <a href="#">tìm việc ngay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-l-6 col-c-12 oder-1">
+              <img src="img/reason/tim_viec.webp" alt="" />
+            </div>
+
+            <div class="col-l-6 col-c-12 oder-2">
+              <div class="item-info">
+                <h3>Hỗ trợ Người tìm việc</h3>
+                <ul>
+                  <li>
+                    Nhà tuyển dụng chủ động tìm kiếm và liên hệ với bạn qua hệ
+                    thống kết nối ứng viên thông minh.
+                  </li>
+                  <li>
+                    Báo cáo chi tiết Nhà tuyển dụng đã xem CV và gửi offer tới
+                    bạn.
+                  </li>
+                  <li>
+                    Định hướng nghề nghiệp & khám phá tính cách qua Công cụ Trắc
+                    nghiệm tính cách MBTI.
+                  </li>
+                  <li>
+                    Cung cấp các khóa học nâng cao kỹ năng chuyên môn.
+                  </li>
+                </ul>
+                <div class="item-info__button">
+                  <a href="#">thử ngay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-l-6 col-c-12 oder-2">
+              <img src="img/reason/bao_mat.webp" alt="" />
+            </div>
+
+            <div class="col-l-6 col-c-12 oder-1">
+              <div class="item-info">
+                <h3>Bảo mật & An toàn tuyệt đối</h3>
+                <ul>
+                  <li>
+                    Bạn có thể chủ động bật / tắt trạng thái tìm việc, trạng
+                    thái cho phép Nhà tuyển dụng xem hồ sơ. Nếu các trạng thái
+                    tắt, không ai có thể xem được CV của bạn.
+                  </li>
+                  <li>
+                    Các Nhà tuyển dụng đều được TopCV xác thực rõ ràng danh
+                    tính, đảm bảo đến từ các công ty uy tín, giúp bạn yên tâm
+                    hơn khi ứng tuyển và sớm chủ động nhận được phản hổi.
+                  </li>
+                </ul>
+                <div class="item-info__button">
+                  <a href="#">thử ngay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--? end - reason -->
+
+    <!--! start - partner -->
+    <section>
+      <div class="partner">
+        <div class="grid wide">
+          <h2>doanh nghiệp tuyển dụng trên topcv</h2>
+          <p class="title-sub">
+            Hàng nghìn doanh nghiệp uy tín đang tìm kiếm ứng viên trên TopCV
+          </p>
+          <!--? partner company -->
+          <div class="row">
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/techcombank.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/fpt.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/tiki.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/viettel.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/vingroup.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/momo.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/suntory_pepsico.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/samsung.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/cengroup.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/cengroup.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/samsung.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/suntory_pepsico.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/techcombank.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/fpt.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/tiki.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/viettel.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/vingroup.webp" alt="" />
+              </a>
+            </div>
+            <div class="col-l-2 company">
+              <a href="#">
+                <img src="img/partner/momo.webp" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <p class="partner-button">
+            <a href="error.html">tuyển dụng ngay</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--? end - partner -->
+
+    <!--! start - footer -->
+    <section>
+      <footer>
+        <div class="footer">
+          <div class="grid wide">
+            <div class="row">
+              <!--? footer - left -->
+              <div class="col-l-7 col-c-12">
+                <div class="footer-left">
+                  <div class="row">
+                    <div class="col-l-4 col-c-6">
+                      <div class="ung-dung">
+                        <h5 class="footer-title">ứng dụng</h5>
+                        <ul class="footer-link">
+                          <li><a href="#">tìm việc làm</a></li>
+                          <li><a href="#">khoá học</a></li>
+                          <li><a href="#">trắc nghiệm MBTI</a></li>
+                          <li><a href="#">hướng dẫn viết CV</a></li>
+                          <li><a href="#">tư vấn sửa CV</a></li>
+                          <li><a href="#">thiết kế CV</a></li>
+                          <li><a href="#">dịch vụ CV</a></li>
+                          <li><a href="#">bài viết tham khảo</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-l-4 col-c-6">
+                      <div class="doi-tac">
+                        <h5 class="footer-title">đối tác</h5>
+                        <ul class="footer-link">
+                          <li><a href="error.html">doanh ngiệp</a></li>
+                          <li><a href="error.html">trường đại học</a></li>
+                          <li><a href="error.html">các CLB đoàn thể</a></li>
+                          <li>
+                            <a href="https://edu2review.com/">Edu2Review.com</a>
+                          </li>
+                          <li><a href="https://gitiho.com/">gitiho.com</a></li>
+                          <li>
+                            <a href="https://jamja.vn/khuyen-mai">JAMJA.vn</a>
+                          </li>
+                          <li><a href="https://mogi.vn/">mogi.vn</a></li>
+                          <li><a href="https://homedy.com/">homedy.com </a></li>
+                          <li>
+                            <a href="https://www.viecngay.vn/">printgo.vn </a>
+                          </li>
+                          <li><a href="https://tophr.vn/">viecngay.vn </a></li>
+                          <li><a href="https://tophr.vn/">topHR.vn </a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-l-4 col-c-12">
+                      <div class="ket-noi">
+                        <h5 class="footer-title">kết nối</h5>
+                        <ul>
+                          <li class="ket-noi__icon-link">
+                            <a href="https://www.facebook.com/">
+                              <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/">
+                              <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.youtube.com/">
+                              <i class="fa fa-youtube"></i>
+                            </a>
+                          </li>
+
+                          <li class="ket-noi__icon-bct">
+                            <a href="http://online.gov.vn/ ">
+                              <img src="img/footer/bct.webp" alt="" />
+                            </a>
+                          </li>
+                          <li class="ket-noi__icon-dmca">
+                            <a href="https://www.dmca.com/">
+                              <img src="img/footer/dmca.png" alt="" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--? footer - right -->
+              <div class="col-l-5 col-c-12">
+                <div class="footer-right">
+                  <div class="row">
+                    <div class="col-l-12 col-c-12">
+                      <div class="logo">
+                        <a href="index.html" class="logo-topcv">
+                          <img src="img/logo/topcv-logo.webp" alt="" />
+                        </a>
+                        <a href="#" class="google">
+                          <img
+                            src="img/footer/logo-google-for-startup.webp"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+
+                      <h5>
+                        ứng dụng TopCV
+                        <span class="red"> Mới </span>
+                      </h5>
+
+                      <div class="app">
+                        <!--? app google -->
+                        <div class="app-google">
+                          <a
+                            href="https://play.google.com/store/apps/details?id=com.topcv"
+                          >
+                            <img src="img/footer/googleplay.webp" alt="" />
+                          </a>
+                        </div>
+
+                        <!--? app apple -->
+
+                        <div class="app-apple">
+                          <a
+                            href="https://apps.apple.com/us/app/topcv-t%E1%BA%A1o-cv-t%C3%ACm-vi%E1%BB%87c-l%C3%A0m/id1455928592?ls=1"
+                          >
+                            <img src="img/footer/appstore.webp" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-l-6 col-c-12">
+                      <div class="footer-link">
+                        <ul>
+                          <li><a href="error.html"> giới thiệu </a></li>
+                          <li><a href="error.html"> góc báo chí </a></li>
+                          <li><a href="error.html"> tuyển dụng </a></li>
+                          <li><a href="error.html"> tuyển dụng </a></li>
+                          <li><a href="error.html"> liên hệ </a></li>
+                          <li><a href="error.html"> hỏi đáp </a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-l-6 col-c-12">
+                      <div class="footer-link">
+                        <ul>
+                          <li><a href="error.html"> chính sách bảo mật </a></li>
+                          <li><a href="error.html"> điều khoản dịch vụ </a></li>
+                          <li><a href="error.html"> quy chế hoạt động </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="grid wide">
+        <div class="row">
+          <div class="footer__bottom">
+            <div class="row">
+              <div class="col-l-6 col-c-12">
+                <div class="footer__bottom-left">
+                  <p>
+                    © 2014 - 2020 Bản quyền thuộc về CTCP TopCV Việt Nam
+                  </p>
+                </div>
+              </div>
+              <div class="col-l-6 col-c-12">
+                <div class="footer__bottom-rig">
+                  <p>
+                    Trụ sở HN: Tầng 03, Tòa nhà Goldseason, 47 Nguyễn Tuân,
+                    Thanh Xuân, Hà Nội.
+                  </p>
+                  <p>
+                    TP HCM: Tòa nhà cao ốc Nam Giao 1, số 261 - 263 Phan Xích
+                    Long, Phường 2, Quận Phú Nhuận, TP Hồ Chí Minh
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--? end - footer -->
+
+    <!--! start - bell -->
+    <div class="bell">
+      <!-- <img src="img/bell/icons8-alarm-100.png" id="bellImg" alt="" /> -->
+      <i class="fa fa-bell icon-bell" aria-hidden="true"></i>
+
+      <div class="bell__popup">
+        <p class="bell__popup-title">nhận thông báo</p>
+
+        <img src="img/bell/noti_guide.webp" alt="" />
+
+        <p class="bell__popup-sub">
+          Bạn đang không cho phép TOPCV gửi thông báo đến trình duyệt của bạn,
+          vui lòng làm theo hướng dẫn để nhận thông báo
+        </p>
+      </div>
+    </div>
+    <!--? end - bell -->
+
+    <!--!javascript -->
+    <script src="javascript/slide-banner.js"></script>
+    <script src="textcode.js"></script>
+  </body>
+</html>

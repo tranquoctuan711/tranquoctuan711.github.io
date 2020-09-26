@@ -1,0 +1,48 @@
+//! Slide Banner
+.slide__banner {
+  height: 220px;
+  position: relative;
+
+  //? .slide__banner-img
+  &-img {
+    width: 1150px;
+    height: 220px;
+    margin-top: 20px;
+  }
+  &-img img {
+    position: absolute;
+
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &-img img.showing { 
+    opacity: 1;
+    visibility: visible;
+  }
+
+  //? .slide__banner-button
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end;
+    margin-top: 10px;
+    top: 50px;
+
+    //* .slide__banner-button--item
+    &--item {
+      width: 20px;
+      height: 20px;
+      background-color: $color-green;
+      border-radius: 50%;
+
+      margin-left: 20px;
+      margin-top: 10px;
+
+      &:hover {
+        background-color: $color-darkGreen;
+      }
+    }
+  }
+}

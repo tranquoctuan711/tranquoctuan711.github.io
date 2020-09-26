@@ -1,0 +1,7 @@
+@mixin column($nameCol) {
+  @for $i from 1 through $colMax {
+    .col-#{$nameCol}-#{$i} {
+      width: (100 * $i) / $colMax * 1%;
+    }
+  }
+}

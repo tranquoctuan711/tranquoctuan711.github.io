@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*
+*   Độ rộng grid
+*   Khoảng cách 2 bên container
+*   Khoảng cách 2 bên của column
+*   Số column của grid
+*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  
+}
+/* test thanh scroll dưới x */
+body{
+  overflow-x: hidden;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.grid, .grid.wide {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.grid {
+  width: 100vw;
+  display: block;
+}
+
+.grid.wide {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+[class*="col-"] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/*
+?    Column: .col
+?    Prefix class:
+*       c - mobile (default)
+*       m - tablet
+*       l - PC
+*/
+.col-c-1 {
+  width: 8.33333%;
+}
+
+.col-c-2 {
+  width: 16.66667%;
+}
+
+.col-c-3 {
+  width: 25%;
+}
+
+.col-c-4 {
+  width: 33.33333%;
+}
+
+.col-c-5 {
+  width: 41.66667%;
+}
+
+.col-c-6 {
+  width: 50%;
+}
+
+.col-c-7 {
+  width: 58.33333%;
+}
+
+.col-c-8 {
+  width: 66.66667%;
+}
+
+.col-c-9 {
+  width: 75%;
+}
+
+.col-c-10 {
+  width: 83.33333%;
+}
+
+.col-c-11 {
+  width: 91.66667%;
+}
+
+.col-c-12 {
+  width: 100%;
+}
+
+@media (min-width: 740px) {
+  .col-m-1 {
+    width: 8.33333%;
+  }
+  .col-m-2 {
+    width: 16.66667%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33333%;
+  }
+  .col-m-5 {
+    width: 41.66667%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33333%;
+  }
+  .col-m-8 {
+    width: 66.66667%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33333%;
+  }
+  .col-m-11 {
+    width: 91.66667%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-l-1 {
+    width: 8.33333%;
+  }
+  .col-l-2 {
+    width: 16.66667%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33333%;
+  }
+  .col-l-5 {
+    width: 41.66667%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33333%;
+  }
+  .col-l-8 {
+    width: 66.66667%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33333%;
+  }
+  .col-l-11 {
+    width: 91.66667%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=grid.css.map */

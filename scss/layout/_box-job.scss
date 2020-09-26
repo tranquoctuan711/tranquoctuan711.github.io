@@ -1,0 +1,185 @@
+.box-job {
+  $size-button: 25px;
+
+  position: relative;
+
+  //! Phần này bạn tự chỉnh theo sở thích của bạn.
+  // ok bạn để mình chỉnh, nz ok rồi đó
+  padding-bottom: $size-button + 25px;
+
+  margin-top: 45px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  background-color: $color-background-gray;
+  //? .box-job__title
+  &__title {
+    background-color: $color-green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 11px;
+
+    //? .box-job__title-icon
+    &-icon {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: initial;
+      font-style: italic;
+      color: $color-white;
+      font-size: 18px;
+
+      & img {
+        width: 40px;
+        height: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+      }
+    }
+    //? .box-job__title-show-list
+    &-show-list {
+      display: flex;
+      align-items: center;
+      color: $color-white;
+
+      & .center {
+        margin-right: 5px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  &__data {
+    $numberBlockJob: 3;
+    $marginBottom: 5;
+    $padding: 5 * 2;
+    min-height: ((138 * $numberBlockJob) + $marginBottom + $padding) * 1px;
+
+    padding: 5px 15px 5px 10px;
+    line-height: 1.25rem;
+
+    //! Positioning
+    position: relative;
+
+    box-sizing: border-box;
+    &-item {
+      //! Positioning
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      height: 100%;
+      padding: 15px 10px;
+
+      //! Animation & Transition
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
+
+      &-list {
+        border: 1px solid black;
+        margin-left: 5px;
+        border-radius: 15px;
+
+        .logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .box-img {
+            $size-wh: 100px;
+            width: $size-wh;
+            height: $size-wh;
+          }
+        }
+        .info {
+          padding: 20px;
+          line-height: 2rem;
+        }
+
+        .title {
+          font-size: 14px;
+          font-weight: bold;
+
+          &::before {
+            content: attr(title);
+          }
+        }
+
+        .company {
+          font-size: 14px;
+          color: gray;
+          &::before {
+            content: attr(title);
+          }
+        }
+
+        .wage {
+          color: #333;
+        }
+        .location {
+          text-transform: capitalize;
+
+          i::after {
+            padding-left: 5px;
+            content: attr(title);
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    $size-wh: $size-button;
+
+    width: 100%;
+
+    //! Positioning
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+
+    //! Display & BoxModal
+    display: flex;
+    justify-content: center;
+
+    &-item {
+      position: relative;
+
+      width: $size-wh;
+      height: $size-wh;
+      padding-right: 20px;
+      border-radius: 50%;
+      background-color: $color-green;
+
+      margin: 0 5px;
+
+      &:hover {
+        background-color: $color-darkGreen;
+      }
+    }
+  }
+}
+
+//? showing Boxjob
+.showing {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: 1s;
+}
+
+.no-padding {
+  padding: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+//? ẩn chữ dư
+.text_ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,69 @@
+@import "function";
+@import "variables";
+@import "mixin";
+
+// Reset body
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+//? padding 2 bên là 15px
+%padding-12 {
+  padding-left: $gridGap * 1px;
+  padding-right: $gridGap * 1px;
+}
+
+.grid {
+  width: 100vw;
+  display: block;
+  @extend %padding-12;
+
+  &.wide {
+    max-width: $gridWide * 1px;
+    margin: auto;
+    @extend %padding-12;
+  }
+}
+
+//? Tạo row để fix khoảng cách 2 bên bằng với khoảng cách 2 bên của column
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -($colGap / 2) * 1px;
+  margin-right: -($colGap / 2) * 1px;
+}
+//? Column cho khoảng cách 8px
+[class*="col-"] {
+  padding-left: ($colGap / 2) * 1px;
+  padding-right: ($colGap / 2) * 1px;
+}
+
+/*
+?    Column: .col
+?    Prefix class:
+*       c - mobile (default)
+*       m - tablet
+*       l - PC
+*/
+//? Dùng map-get để viết lại thay cho biến $breakpoints
+@each $key, $value in map-get($grid, "breakpoints") {
+  @if ($key == "default") {
+    //? Dùng hàm map-get của scss để lấy value
+    $colDefault: map-deep-get($grid, "breakpoints", "default");
+
+    //* col-c-1 ==> col-c-12
+    @include column($colDefault);
+  } @else {
+    @media (min-width: $value * 1px) {
+      @include column($key);
+    }
+  }
+}

@@ -1,0 +1,45 @@
+html {
+  font-size: 16px;
+}
+
+/* @media all and (max-width: 1920px) {
+  .container {
+    width: 1150px;
+    margin: auto;
+  }
+} */
+
+/* @media all and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+} */
+
+/* @media all and (max-width: 600px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+} */
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn {
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.btn-rounded {
+  border-radius: 5rem;
+}
+/*# sourceMappingURL=style.css.map */

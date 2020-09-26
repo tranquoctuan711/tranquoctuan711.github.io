@@ -1,0 +1,17 @@
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.background-gray{
+  background-color: #F5F8FA;
+}
+
+.background-green-dark{
+  background-color: #F6FBF9;
+}

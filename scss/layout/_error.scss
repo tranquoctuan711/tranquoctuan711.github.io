@@ -1,0 +1,41 @@
+//! Trang Error 404
+.error {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  a {
+    background-color: #96fbeb;
+    color: #404f69;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    font-size: 20px;
+    border: 6px solid #404f69;
+    border-radius: 5rem;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;    
+
+    position: absolute;
+    top: 2%;
+    left: 39%;
+    z-index: 999;
+
+    &:hover{
+      background-color: #80D8CF;
+    }
+  }
+
+  img {
+    width: auto;
+    display: block;
+    transform: scale(0.9);
+    
+  }
+}

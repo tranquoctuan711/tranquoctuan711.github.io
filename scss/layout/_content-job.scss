@@ -1,0 +1,37 @@
+.content-job {
+  padding: 60px 0;
+  &__title {
+    margin-bottom: 60px;
+    
+    p {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+
+    &-app {
+      display: flex;
+      justify-content: center;
+      a {
+        display: inline-block;
+        width: 120px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__info {
+    
+    h5 {
+      color: $color-green;
+      font-size: 18px ;
+      text-align: center;  
+    }
+    p {
+      font-size: 14px;
+      color: gray;
+      text-align: center;
+    }
+  }
+}

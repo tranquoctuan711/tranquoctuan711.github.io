@@ -1,0 +1,68 @@
+//! bell
+body {
+  .bell {
+    $size-bell: 50 * 1px;
+    $position: 25 * 1px;
+    $padding-content: 15 * 1px;
+
+    position: fixed;
+    bottom: $position;
+    left: $position;
+
+    width: $size-bell;
+    height: $size-bell;
+
+    z-index: 999;
+    text-align: center;
+    background-color: $color-green;
+    border-radius: 50%;
+    padding: $padding-content;
+
+    .icon-bell {
+      font-size: $size-bell - ($padding-content * 2);
+      line-height: $size-bell - ($padding-content * 2);
+      color: white;
+    }
+
+    &:hover .bell__popup {
+      display: block;
+    }
+
+    &__popup {
+      display: none;
+
+      position: absolute;
+      bottom: calc(100% + 10px);
+      left: 0px;
+      width: 248px;
+
+      background: rgb(255, 255, 255);
+      border-radius: 5px;
+      border: 1px solid rgb(241, 241, 241);
+
+      box-sizing: border-box;
+      cursor: pointer;
+
+      &-title {
+        border-bottom: 0.25px solid gray;
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: bold;
+        text-align: center;
+
+        padding: 7px;
+        margin: auto;
+        margin-bottom: 10px;
+        line-height: 1.25rem;
+      }
+
+      &-sub {
+        font-size: 12px;
+        font-weight: 400;
+        color: gray;
+        margin: 5px;
+        padding: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.box-searchs {
+  padding: 20px 10px;
+  &__info {
+    border: 1px solid #eee;
+    height: 1166px;
+    border-radius: 15px;
+    &--list {
+      border: 1px solid black;
+      margin-left: 5px;
+      border-radius: 15px;
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .box-img {
+          $size-wh: 100px;
+          width: $size-wh;
+          height: $size-wh;
+        }
+      }
+      .info {
+        padding: 20px;
+        line-height: 2rem;
+      }
+
+      .title {
+        font-size: 14px;
+        font-weight: bold;
+
+        &::before {
+          content: attr(title);
+        }
+      }
+
+      .company {
+        font-size: 14px;
+        color: gray;
+        &::before {
+          content: attr(title);
+        }
+      }
+
+      .wage {
+        color: #333;
+      }
+      .location {
+        text-transform: capitalize;
+
+        i::after {
+          padding-left: 5px;
+          content: attr(title);
+        }
+      }
+    }
+  }
+}
+.no-padding {
+    padding: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  
+  //? ẩn chữ dư
+  .text_ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }

@@ -1,0 +1,51 @@
+.reason {
+  background-color: $color-background-gray;
+  padding: 20px 0;
+  h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0;
+    color: $color-green;
+  }
+  .item-info {
+    padding: 20px 30px;
+    h3 {
+      font-size: 20px;
+      color: $color-green;
+      text-transform: capitalize;
+      margin: 20px 0;
+    }
+    ul {
+      padding: 0 20px;
+      li {
+        font-size: 14px;
+        line-height: 1.5rem;
+        list-style: disc;
+      }
+    }
+
+    &__button {
+      margin-top: 30px;
+      text-align: center;
+      a {
+        background-color: $color-green;
+        padding: 8px 15px;
+        border-radius: 15px;
+        color: $color-white;
+        font-weight: bold;
+        text-transform: uppercase;
+        &:hover {
+          background-color: $color-darkGreen;
+        }
+      }
+    }
+  }
+
+  .oder-1{
+    order: 1;
+  }
+  .oder-2{
+    order: 2;
+  }
+}
